@@ -10,9 +10,7 @@
 			"GitHub.vscode-pull-request-github",
 			"eamodio.gitlens",
 			// official godot extension
-			"geequlim.godot-tools",
-			// required for auto remove final newlines
-			"DoCode.vscode-remove-final-newlines"
+			"geequlim.godot-tools"
 		]
 	},
 	"settings": {
@@ -21,11 +19,9 @@
 		"editor.trimAutoWhitespace": true,
 		"editor.renderFinalNewline": true,
 		"editor.renderWhitespace": "selection",
-		"files.insertFinalNewline": false,
+		"files.insertFinalNewline": true,
 		"files.trimFinalNewlines": true,
 		"files.trimTrailingWhitespace": true,
-		// requires extension recommended by this workspace
-		"files.removeFinalNewlines": true,
 		"files.exclude": {
 			"**/.git": true,
 			"**/.svn": true,
