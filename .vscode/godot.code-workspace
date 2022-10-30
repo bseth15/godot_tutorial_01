@@ -1,0 +1,52 @@
+{
+	"folders": [
+		{
+			// workspace root directory
+			"path": "../"
+		}
+	],
+	"extensions": {
+		"recommendations": [
+			"GitHub.vscode-pull-request-github",
+			"eamodio.gitlens",
+			// official godot extension
+			"geequlim.godot-tools",
+			// required for auto remove final newlines
+			"DoCode.vscode-remove-final-newlines"
+		]
+	},
+	"settings": {
+		// white space settings to reduce file size
+		"editor.insertSpaces": false,
+		"editor.trimAutoWhitespace": true,
+		"editor.renderFinalNewline": true,
+		"editor.renderWhitespace": "selection",
+		"files.insertFinalNewline": false,
+		"files.trimFinalNewlines": true,
+		"files.trimTrailingWhitespace": true,
+		// requires extension recommended by this workspace
+		"files.removeFinalNewlines": true,
+		"files.exclude": {
+			"**/.git": true,
+			"**/.svn": true,
+			"**/.hg": true,
+			"**/CVS": true,
+			"**/.DS_Store": true,
+			"**/Thumbs.db": true
+		},
+		"files.eol": "\n",
+		// language overrides
+		"[gdscript]": {
+			"editor.tabSize": 4,
+			"editor.rulers": [
+				{
+					"column": 120
+				}
+			],
+			"editor.wordWrap": "wordWrapColumn",
+			"editor.wordWrapColumn": 120,
+			"editor.wrappingStrategy": "simple",
+			"editor.wrappingIndent": "deepIndent"
+		}
+	}
+}

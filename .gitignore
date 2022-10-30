@@ -1,0 +1,16 @@
+# macOS Specific ignores
+**/.DS_Store
+
+# Windows Specific ignores
+
+# Godot-specific ignores
+src/**/.import/
+src/**/export.cfg
+src/**/export_presets.cfg
+
+# Imported translations (automatically generated from CSV files)
+src/**/*.translation
+
+# Mono-specific ignores
+src/**/.mono/
+src/**/data_*/
