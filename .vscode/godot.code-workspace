@@ -43,6 +43,8 @@
 			"editor.wordWrapColumn": 120,
 			"editor.wrappingStrategy": "simple",
 			"editor.wrappingIndent": "deepIndent"
-		}
+		},
+		"godot_tools.gdscript_lsp_server_host": "127.0.0.1",
+		"godot_tools.gdscript_lsp_server_port": 6008
 	}
 }
