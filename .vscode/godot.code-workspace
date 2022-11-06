@@ -2,7 +2,8 @@
 	"folders": [
 		{
 			// workspace root directory
-			"path": "../"
+			"path": "../src",
+			"name": "res://"
 		}
 	],
 	"extensions": {
@@ -28,7 +29,9 @@
 			"**/.hg": true,
 			"**/CVS": true,
 			"**/.DS_Store": true,
-			"**/Thumbs.db": true
+			"**/Thumbs.db": true,
+			"**/*.import": true,
+			"**/project.godot": true
 		},
 		"files.eol": "\n",
 		// language overrides
@@ -56,7 +59,7 @@
 				"name": "GDScript Godot",
 				"type": "godot",
 				"request": "launch",
-				"project": "${workspaceFolder}/src",
+				"project": "${workspaceFolder}",
 				// Verify settings match: Editor > Editor Settings... > Network > Debug
 				"port": 6007,
 				"address": "127.0.0.1",
