@@ -2,7 +2,7 @@
 	"folders": [
 		{
 			// workspace root directory
-			"path": "../src",
+			"path": "../res",
 			"name": "res://"
 		}
 	],
@@ -30,8 +30,7 @@
 			"**/CVS": true,
 			"**/.DS_Store": true,
 			"**/Thumbs.db": true,
-			"**/*.import": true,
-			"**/project.godot": true
+			"**/*.import": true
 		},
 		"files.eol": "\n",
 		// language overrides
