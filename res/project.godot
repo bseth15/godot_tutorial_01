@@ -11,6 +11,7 @@ config_version=4
 [application]
 
 config/name="Godot Tutorial 01"
+run/main_scene="res://Label.tscn"
 config/icon="res://icon.png"
 
 [global]
@@ -18,6 +19,7 @@ config/icon="res://icon.png"
 editor=false
 code=false
 script=false
+main=false
 
 [gui]
 
