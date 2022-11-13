@@ -1,7 +1,7 @@
 extends Sprite
 
-var speed: float = 400
 var angular_speed: float = PI
+var speed: float = 400
 
 
 func _init() -> void:
@@ -9,7 +9,20 @@ func _init() -> void:
 
 
 func _process(delta: float) -> void:
-	rotation += angular_speed * delta
+	var direction: int = 0
 
-	var velocity: Vector2 = Vector2.UP.rotated(rotation) * speed
+	if Input.is_action_pressed("ui_left"):
+		direction = 1 if Input.is_action_pressed("ui_down") else -1
+	if Input.is_action_pressed("ui_right"):
+		direction = -1 if Input.is_action_pressed("ui_down") else 1
+
+	rotation += angular_speed * direction * delta
+
+	var velocity: Vector2 = Vector2.ZERO
+	if Input.is_action_pressed("ui_up"):
+		velocity = Vector2.UP
+	if Input.is_action_pressed("ui_down"):
+		velocity = Vector2.DOWN
+
+	velocity = velocity.rotated(rotation) * speed
 	position += velocity * delta
